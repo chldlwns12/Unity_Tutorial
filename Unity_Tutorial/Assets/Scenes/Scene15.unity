@@ -138,7 +138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &63566094
 RectTransform:
   m_ObjectHideFlags: 0
@@ -364,7 +364,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &754031733
 Transform:
   m_ObjectHideFlags: 0
@@ -445,7 +445,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1437589499
 Transform:
   m_ObjectHideFlags: 0
@@ -761,7 +761,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1768288752}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2050787760}
+        m_MethodName: ShowDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1768288752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -912,6 +923,7 @@ GameObject:
   - component: {fileID: 2050787758}
   - component: {fileID: 2050787757}
   - component: {fileID: 2050787756}
+  - component: {fileID: 2050787760}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -999,6 +1011,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &2050787760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050787755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a42fcda50e53a934f8cf06dd8b0a1c9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite_StandingCG: {fileID: 1437589500}
+  sprite_DialogueBox: {fileID: 754031734}
+  txt_Dialogue: {fileID: 63566095}
+  dialogue:
+  - dialogue: "\uC548\uB155\uD558\uC138\uC694 \uCF00\uC774\uB514\uC785\uB2C8\uB2E4."
+    cg: {fileID: 21300000, guid: 1017021bc2d3066418a342bd713f4ae0, type: 3}
+  - dialogue: "\uC720\uD29C\uBE0C \uCF00\uC774\uB514\uC785\uB2C8\uB2E4."
+    cg: {fileID: 21300000, guid: 37eef6745e537274b8a9ae2889ab9fe6, type: 3}
+  - dialogue: "\uAD6C\uB3C5 \uAC10\uC0AC\uD569\uB2C8\uB2E4."
+    cg: {fileID: 21300000, guid: 066715fd67b181848bb51cd27e67ccc9, type: 3}
+  - dialogue: "\uC88B\uC544\uC694 \uAC10\uC0AC\uD569\uB2C8\uB2E4."
+    cg: {fileID: 21300000, guid: df691ad2b35f3d7478d7cdd2fb22313d, type: 3}
 --- !u!1 &2073771487
 GameObject:
   m_ObjectHideFlags: 0
